@@ -1,0 +1,5 @@
+rootProject.name = 'vue-web'
+include "web-common"
+include "web-backend"
+include "web-frontend"
+

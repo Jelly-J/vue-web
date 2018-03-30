@@ -1,0 +1,8 @@
+mysqldb:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/oms?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 888888
+    
+server:
+  port: 8081
