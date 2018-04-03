@@ -18,11 +18,8 @@ package sample.webflux;
 
 import javax.annotation.Resource;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import reactor.core.publisher.Mono;
 import sample.common.Person;
@@ -33,16 +30,15 @@ import sample.service.PersonService;
  * @author masen
  *
  */
-
-@RestController
+@Controller
 public class WelcomeController {
 	
 	@Resource
 	PersonService personService;
 
-	@GetMapping("/")
+	@RequestMapping("/")
 	public String welcome() {
-		return "Hello World";
+		return "/index";
 	}
 	
 	@PostMapping("/body")

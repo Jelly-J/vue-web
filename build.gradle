@@ -4,7 +4,8 @@ buildscript {
     }
     repositories {
         maven {
-            url 'https://repo.spring.io/libs-milestone'
+            //url 'https://repo.spring.io/libs-milestone'
+            url 'http://maven.aliyun.com/nexus/content/groups/public'
         }
     }
 //    dependencies {
@@ -26,22 +27,15 @@ subprojects {
     apply plugin: 'idea'
     apply plugin: 'eclipse'
     apply plugin: 'org.junit.platform.gradle.plugin'
-	
-//	sourceCompatibility = 1.9
-//	targetCompatibility = 1.9
+
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
-
-//	if (!(name.contains('common'))) {
-//        apply plugin: 'org.springframework.boot'
-//  }
 
     task wrapper(type: Wrapper) {
         gradleVersion = '3.0'
     }
 }
 
-//}
 
 
 

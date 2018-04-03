@@ -6,3 +6,7 @@ mysqldb:
     
 server:
   port: 8081
+
+  spring:
+    thymeleaf:
+      prefix: classpath:/templates/
