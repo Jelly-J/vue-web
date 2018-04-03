@@ -5,7 +5,7 @@ buildscript {
     repositories {
         maven {
             //url 'https://repo.spring.io/libs-milestone'
-            url 'http://maven.aliyun.com/nexus/content/groups/public'
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
     }
 //    dependencies {
@@ -20,6 +20,7 @@ subprojects {
     repositories {
         maven {
             url 'https://repo.spring.io/libs-milestone'
+            //url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
     }
 
@@ -27,6 +28,7 @@ subprojects {
     apply plugin: 'idea'
     apply plugin: 'eclipse'
     apply plugin: 'org.junit.platform.gradle.plugin'
+    apply plugin: 'war'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8

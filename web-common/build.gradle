@@ -1,7 +1,7 @@
 def profiles = 'dev'
 
 jar {
-    baseName = 'nextweb-common'
+    baseName = 'web-common'
 }
 
 dependencies {
