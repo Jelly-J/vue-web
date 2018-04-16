@@ -14,6 +14,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}")
     compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
     //compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-
+    compile group: 'org.thymeleaf', name: 'thymeleaf', version: '2.0.16'
 }
 

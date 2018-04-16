@@ -7,6 +7,9 @@ buildscript {
             //url 'https://repo.spring.io/libs-milestone'
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
+        maven{
+            url 'http://central.maven.org/maven2/'
+        }
     }
 //    dependencies {
 //			classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
