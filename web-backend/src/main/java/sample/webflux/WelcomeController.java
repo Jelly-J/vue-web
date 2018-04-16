@@ -38,7 +38,7 @@ public class WelcomeController {
 
 	@RequestMapping("/")
 	public String welcome() {
-		return "/index";
+		return "index";
 	}
 	
 	@PostMapping("/body")
